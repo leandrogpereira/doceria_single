@@ -1,0 +1,389 @@
+/* CASCADE STYLE SHEET */
+html {
+	font-family: 'Poppins', sans-serif;
+	color: #373a3c;
+}
+
+a {
+	transition: .5s;
+}
+
+/* side bar */
+#sidebar {
+	position: fixed;
+	height: 100%;
+	width: 300px;
+	background-color: #F4ACB7;
+	padding-top: 40px;
+}
+
+#sidebar h1 {
+	color: #693737;
+	font-size: 32px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 30px; 
+}
+
+#sidebar a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+}
+
+#sidebar a:hover {
+	color: #FFE5D9;
+}
+
+#sidebar li {
+	padding: 20px;
+}
+
+.sidebar-container {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 200px;
+}
+
+.logo-doceria {
+	width: 60px;
+	height: 60px;
+	display: block;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* conteúdo */
+.content {
+	position: absolute;
+	left: 300px;
+	width: calc(100% - 300px);
+
+}
+
+.content h1, .content h2 {
+	color: #F4ACB7;
+	margin-bottom: 30px;	
+}
+
+.content h1 {
+	font-size: 48px;
+}
+
+.content h2 {
+	font-size: 35px;
+}
+
+section {
+	padding-left: 50px;
+}
+
+/* bem vindo */ 
+#sessao-bemvindo {
+	padding-left: 0px;
+}
+
+.sessao-bemvindo-content {
+	padding-left: 50px;
+}
+
+#sessao-bemvindo .banner {
+	height: 500px;
+	background-image: url('../img/banner2.jpg');
+	background-position: bottom;
+	background-size: cover;
+	opacity:0.9;
+}
+
+#sessao-bemvindo .banner:hover {
+	opacity:1;
+}
+
+#sessao-bemvindo h1 {
+	margin-top: 70px;
+}
+
+#sessao-bemvindo::after, #sessao-sobre::after {
+	content: "";
+	display: block;
+	clear: both;
+	margin-bottom: 100px;
+}
+
+.sessao-minibanner {
+	width: 300px;
+	height: 400px;
+	background-image: url('../img/banner3.jpg');
+	background-position: center;
+	background-size: cover; /*dá um leve zoom na imagem */
+	float: left;
+}
+
+.sessao-descricao {
+	position: absolute;
+	left: 370px;
+	padding-right: 30px;
+}
+
+.sessao-descricao p {
+	line-height: 2;
+	font-size: 16px;
+	margin-bottom: 30px;
+	margin-left: 25px;
+}
+
+.sessao-bemvindo-btn, form input[type=submit] {
+	background-color: #F4ACB7;
+	color: #FFF;
+	text-decoration: none;
+	padding: 20px 40px;
+	transition: .5s;
+	display: block; /* identifica como linha que não há elementos ao seu lado */
+	width: 100px;
+	text-align: center;
+	border: none;	
+	cursor: pointer;
+	margin-left: 25px;
+}
+
+.sessao-bemvindo-btn:hover, form input[type=submit]:hover {
+	background-color: #FFCAD4;
+}
+
+/* sessão sobre */
+#sessao-sobre .sessao-minibanner {
+	float: right;
+	margin-right: 50px;
+	background-image: url('../img/banner4.jpg');
+}
+
+#sessao-sobre .sessao-descricao {
+	position: absolute;
+	left: 25px;
+	width: calc(100% - 400px);
+}
+
+/* galeria */
+.banner-galeria {
+	background-position: center;
+	background-size: cover;
+	display: inline-block; /* div's em linha */
+	height: 200px;
+}
+
+#sessao-doces1, #sessao-doces2, #sessao-doces3 {
+	padding-right: 50px;
+	margin-bottom: 50px;
+}
+
+.doces1-imgs {
+	width: 18.8%;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+
+#img1 {
+	background-image: url('../img/galeria1.jpg');
+	margin-left: 0;
+}
+
+#img2 {
+	background-image: url('../img/galeria2.jpg');
+}
+
+#img3 {
+	background-image: url('../img/galeria3.jpg');
+}
+
+#img4 {
+	background-image: url('../img/galeria4.jpg');
+}
+
+#img5 {
+	background-image: url('../img/galeria5.png');
+	margin-right: 0;
+}
+
+.doces2-imgs {
+	width: 32.3%;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+
+#img6 {
+	background-image: url('../img/galeria6.jpg');
+	margin-left: 0;
+}
+
+#img7 {
+	background-image: url('../img/galeria7.jpg');
+}
+
+#img8 {
+	background-image: url('../img/galeria8.jpg');
+	margin-right: 0;
+}
+
+.doces3-imgs {
+	width: 23.9%;
+	margin-left: .5%;
+	margin-right: .5%;
+}
+
+#img9 {
+	background-image: url('../img/galeria9.jpg');
+	margin-left: 0;
+}
+
+#img10 {
+	background-image: url('../img/galeria10.jpg');
+}
+
+#img11 {
+	background-image: url('../img/galeria11.jpg');
+}
+
+#img12 {
+	background-image: url('../img/galeria12.jpg');
+	margin-right: 0;
+}
+
+/* formulário */
+
+#form-contato {
+	width: 500px;
+}
+
+#form-contato input[type=text], #form-contato input[type=email], #form-contato textarea {
+	display: block;
+	border: 1px solid #F4ACB7;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+}
+
+#form-contato input[type=text]:focus, #form-contato input[type=email]:focus, #form-contato textarea:focus {
+	border-color: #FFCAD4;
+} 
+
+#form-contato textarea {
+	height: 150px;
+}
+
+#form-contato ::placeholder {
+	color: #FFCAD4;
+}
+
+#form-contato input[type=submit] {
+	margin-left: 0;
+	font-size: 16px;
+	width: 180px;
+}
+
+/* footer */
+footer {
+	height: 100px;
+	padding-top: 150px;
+	color: #F4ACB7;
+	margin-top: 20px;
+}
+
+footer p {
+	text-align: center;
+	font-style: bold;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+	.sessao-bemvindo-content p, .sessao-descricao p {
+		margin-left: 0px;
+		margin-right: 25px;
+	}
+
+	.sessao-minibanner, .sessao-descricao, .sessao-sobre{
+		position: initial;
+	}
+
+    .sessao-minibanner {
+		text-align: center;
+		margin-bottom: 25px;
+		float: none;
+		width: 90%;
+	}
+
+	#sessao-sobre .sessao-minibanner {
+		float: none;
+	}
+
+	#sessao-sobre .sessao-descricao {
+		position: initial;
+		width: calc(100% - 30px);
+	}
+
+	.bloco-img1, .bloco-img2, .bloco-img3  {
+		width: 100%;
+		display: block;
+	}
+
+	.doces1-imgs {		
+		width: 31%;
+	}
+
+	#img4, .doces1-imgs, .doces2-imgs, .doces3-imgs, #img9, #img10, #img11, #img12 {
+		width: 47%;
+		margin-left: 0px;
+	}
+
+	#img5, #img8 {
+		width: 95%;
+	}
+
+	#sessao-bemvindo::after, #sessao-sobre::after {
+		margin: 50px;
+	}
+
+	#form-contato {
+		width: 85%;
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.sessao-minibanner, .sessao-descricao {
+		position: relative;
+		display: block;		
+		left: 0px;
+	}	
+
+	.sessao-bemvindo-btn, .sessao-descricao p {
+		margin-left: 0px;
+	}
+
+	.sessao-bemvindo-content .sessao-minibanner {
+		margin-right: 15px;
+		display: block;
+		position: relative;
+	}
+
+	#sessao-bemvindo::after, #sessao-sobre::after {
+		margin-bottom: 5%;
+	}
+
+	#sessao-sobre .sessao-minibanner {
+		margin-left: 15px;
+		float: right;
+	}
+
+	#sessao-sobre .sessao-descricao {
+		display: block;
+		position: relative;
+		left: 0px;
+		width: 95%;
+		margin-right: 50px;
+	}
+
+}
