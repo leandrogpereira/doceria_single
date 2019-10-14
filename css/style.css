@@ -91,7 +91,7 @@ section {
 }
 
 #sessao-bemvindo .banner {
-	height: 500px;
+	height: 400px;
 	background-image: url('../img/banner2.jpg');
 	background-position: bottom;
 	background-size: cover;
@@ -298,6 +298,12 @@ footer p {
 	font-style: bold;
 }
 
+#bemvindo-btn {
+	position: relative;
+	display: block;
+	float: left;
+}
+
 @media (min-width: 320px) and (max-width: 1024px) {
 	.sessao-bemvindo-content p, .sessao-descricao p {
 		margin-left: 0px;
@@ -350,9 +356,36 @@ footer p {
 		width: 85%;
 	}
 
+	.sessao-bemvindo-btn, #bemvindo-btn {
+		margin-left: 0px;
+	}
+
+	#bemvindo-btn {
+		margin-bottom: 30px;
+	}
+
+	/* conteúdo */
+	.content {
+		position: absolute;
+		left: 200px;
+		width: calc(100% - 200px);
+	}
+
+	#sidebar {
+		width: 200px;
+	}
+
+	#sidebar a {
+		margin-left: 20px;
+	}
+
+	#sessao-bemvindo .banner {
+		height: 300px;
+	}
+
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1024px) {
 	.sessao-minibanner, .sessao-descricao {
 		position: relative;
 		display: block;		
@@ -386,4 +419,25 @@ footer p {
 		margin-right: 50px;
 	}
 
+}
+
+@media (min-width: 1025px) and (max-width: 1256px) {
+	.bloco-img1, .bloco-img2, .bloco-img3  {
+		width: 100%;
+		display: block;
+	}
+
+	.doces1-imgs {		
+		width: 32%;
+	}
+
+	#img4 , #img5, #img6, #img7, #img9, #img10, #img11 , #img12 {
+		width: 49%;
+		margin-left: 0px;
+	}
+
+	 #img8 {
+		width: 99%;
+		margin-left: 0px;
+	}
 }
